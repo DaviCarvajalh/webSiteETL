@@ -11,10 +11,10 @@ export default function Logo({ variant = "dark", className = "" }: LogoProps) {
   return (
     <Link href="/" className={`inline-flex items-center ${className}`} aria-label={`${siteConfig.name} — Inicio`}>
       <Image
-        src={variant === "light" ? "/logo-etl-blanco.svg" : "/logo-etl.svg"}
+        src={variant === "light" ? "/logo-etl-blanco.png" : "/logo-etl.png"}
         alt={siteConfig.name}
-        width={128}
-        height={46}
+        width={896}
+        height={635}
         priority
         className="h-11 w-auto"
       />
