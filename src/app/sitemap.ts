@@ -3,6 +3,8 @@ import { serviceNavItems } from "@/data/navigation";
 import { projects } from "@/data/projects";
 import { siteConfig } from "@/data/site";
 
+export const dynamic = "force-static";
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const lastModified = new Date();
   const staticPaths = ["/", "/servicios", "/proyectos", "/nosotros", "/contacto"];

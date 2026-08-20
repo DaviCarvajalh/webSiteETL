@@ -16,7 +16,7 @@ export default function Logo({ variant = "dark", className = "" }: LogoProps) {
         width={896}
         height={635}
         priority
-        className="h-11 w-auto"
+        className="h-16 w-auto"
       />
     </Link>
   );
