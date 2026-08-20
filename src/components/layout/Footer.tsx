@@ -1,6 +1,6 @@
-import Image from "next/image";
 import Link from "next/link";
 import Container from "@/components/ui/Container";
+import Logo from "@/components/ui/Logo";
 import { mainNavItems, serviceNavItems } from "@/data/navigation";
 import { siteConfig } from "@/data/site";
 
@@ -12,13 +12,7 @@ export default function Footer() {
       <Container className="py-14">
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
           <div>
-            <Image
-              src="/logo-etl-blanco.svg"
-              alt={siteConfig.name}
-              width={128}
-              height={46}
-              className="h-11 w-auto"
-            />
+            <Logo variant="light" />
             <p className="mt-5 max-w-xs text-sm leading-relaxed text-slate-400">
               Soluciones tecnológicas confiables, seguras y alineadas a los objetivos de tu negocio.
             </p>

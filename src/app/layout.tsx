@@ -54,7 +54,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     "@type": "Organization",
     name: siteConfig.name,
     url: siteConfig.url,
-    logo: `${siteConfig.url}/logo-etl.svg`,
+    logo: `${siteConfig.url}/logo-etl.png`,
     description: siteConfig.description,
     email: siteConfig.email,
     address: {
@@ -65,7 +65,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   };
 
   return (
-    <html lang="es-CL" className={`${inter.variable} h-full`}>
+    <html lang="es-CL" data-scroll-behavior="smooth" className={`${inter.variable} h-full`}>
       <body className="flex min-h-full flex-col font-sans">
         <script
           type="application/ld+json"
